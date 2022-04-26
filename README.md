@@ -1,9 +1,8 @@
 # Bus Tracker
 
 ## Description
-This is a MBTA Bus Tracker on real-time using the MBTA API to track the buses on Route 1.
-Each bus have a number that can be showed doing click over each bus.
-
+This is a MBTA Bus Tracker on real-time using the MBTA API to track the buses by routes.
+Once you choose the route the map is going to show you the buses that are on the route and how many buses are.
 
 ## Usage 
 You can click on [bus-tracker](https://christopher4040.github.io/bus-tracker/) to view the live website. 
