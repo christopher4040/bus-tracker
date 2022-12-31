@@ -2,9 +2,9 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiY21hbGRvbmFkbzE2IiwiYSI6ImNsMWpsb2FlNjBzbnkzY3M2Z3g0Y2FuZGIifQ.-o5Mn3GJ4yc4kAr1g9ubkA';
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/dark-v10',
-  center: [-71.101, 42.358],
-  zoom: 12
+  style: 'mapbox://styles/mapbox/light-v11',
+  center: [-71.101, 42.340],
+  zoom: 11.5
 });
 
 let markers = [];
@@ -18,13 +18,15 @@ let timer;
 let selectDOM = document.getElementById('form-select');
 let routeName = document.getElementById('route-long-name');
 let numberBuses = document.getElementById('number-buses');
+let cardContent = document.getElementById('card-content')
 
 // create markers and popups
 let initializeMarkers = ((locations) => {
   locations.forEach((location) => {
+    console.log(location.attributes);
     let busImg = document.createElement('div');
     busImg.id = 'marker';
-    let popup = new mapboxgl.Popup({ offset: 25 }).setText(`Bus #${location.attributes.label}`);
+    let popup = new mapboxgl.Popup({ offset: 50 }).setHTML('<h5 style="padding-top: 20px;" >Bus: '+location.attributes.label+'</h5>');
     marker = new mapboxgl.Marker(busImg, {anchor: 'bottom'});
     markers.push({'marker':marker, 'popup':popup});
   });
@@ -64,6 +66,7 @@ async function fetchRoutes() {
     option.text = route.attributes.short_name;
     selectDOM.add(option, selectDOM[i+1]);
   });
+  
   disableRoutes();
 }
 
@@ -79,6 +82,7 @@ async function getBusLocations() {
   return json.data;
 }
 
+// 
 async function getRoutes() {
   const url = `https://api-v3.mbta.com/routes?filter[type]=3`;
   const response = await fetch(url);
@@ -100,6 +104,7 @@ $('#form-select').change(function() {
   route = $(this).val();
   clearMarkers();
   clearTimeout(timer);
+  cardContent.style.visibility = "visible";
   run();
 });
 
