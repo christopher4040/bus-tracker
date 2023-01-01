@@ -23,7 +23,7 @@ let cardContent = document.getElementById('card-content')
 // create markers and popups
 let initializeMarkers = ((locations) => {
   locations.forEach((location) => {
-    console.log(location.attributes);
+    console.log(location);
     let busImg = document.createElement('div');
     busImg.id = 'marker';
     let popup = new mapboxgl.Popup({ offset: 50 }).setHTML('<h5 style="padding-top: 20px;" >Bus: '+location.attributes.label+'</h5>');

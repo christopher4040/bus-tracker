@@ -17,7 +17,7 @@ body {
   border-radius: 3px; 
 }
 
-#title {
+/* #title {
   position: relative;
   margin-left: auto;
   background: rgba(255, 255, 255, .8);
@@ -29,7 +29,7 @@ body {
   font-family: sans-serif;
   text-align: center;
   font-weight: 700;
-}
+} */
 
 #marker {
   background-image: url('./images/bus-stop.png');
@@ -38,7 +38,8 @@ body {
   height: 50px; 
   border-radius: 50%;
   cursor: pointer;
-  filter: invert(58%) sepia(91%) saturate(1124%) hue-rotate(339deg) brightness(104%) contrast(101%);
+  color: aquamarine;
+  filter: invert(30%) sepia(10%) saturate(0%) hue-rotate(150deg) brightness(95%) contrast(88%);
 }
 
 .mapboxgl-popup {
