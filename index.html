@@ -12,21 +12,25 @@
   
 </head>
 <body>
-  <header class="d-flex align-items-center border-bottom" style="height: 7%;">
+  <!-- <header class="d-flex align-items-center border-bottom" style="height: 45px;">
     <b class="text-left fs-5 ps-3">MBTA Bus Tracker</b>
-  </header>
+  </header> -->
+  <nav class="navbar navbar-light bg-light ps-3">
+    <a class="navbar-brand" href="#">MBTA Bus Tracker</a>
+  </nav>
   
-    <div class="container p-3" style="height: 93%;">
-      <div class="container p-0" style="height: 100%;">
-        <div class="row h-2">
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <select id="form-select" class="form-select " aria-label="Default select example">
-              <option value="default" selected>Choose a route</option>
-            </select>
-          </div>
-        </div>
-        <br>
-        <div class="bg-light border rounded-3 position-relative" style="height: 90%;">
+  <div class="container" style="height: 93vh;">
+    <div class="row justify-content-center pt-2">
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <select id="form-select" class="form-select " aria-label="Default select example">
+          <option value="default" selected>Choose a route</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <div class="row justify-content-center" style="height: 87%;">
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <div class="bg-light border rounded-3 position-relative" style="height: 87%;">
           <div id="map">
             <div id="card-content" class="card p-2" style="z-index: 1; width: fit-content; background-color: rgba(255,255,255,.8); visibility: hidden;">
               <span id="route-long-name" class="text-start fs-6"></span>
@@ -36,6 +40,8 @@
         </div>
       </div>
     </div>
+  </div>
+  
   <script src="./mapanimation.js"></script>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
