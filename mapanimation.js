@@ -19,7 +19,6 @@ let selectDOM = document.getElementById('form-select');
 let routeName = document.getElementById('route-long-name');
 let numberBuses = document.getElementById('number-buses');
 let cardContent = document.getElementById('card-content')
-
 // create markers and popups
 let initializeMarkers = ((locations) => {
   locations.forEach((location) => {
@@ -101,13 +100,16 @@ function clearMarkers() {
 }
 
 $('#form-select').change(function() {
-  route = $(this).val();
+  $('.modal').modal('show');
+  setTimeout(() => {
+    route = $(this).val();
   clearMarkers();
   clearTimeout(timer);
   cardContent.style.visibility = "visible";
   run();
+  $('.modal').modal('hide');
+  }, 2000);
 });
 
 fetchRoutes();
 run();
-
