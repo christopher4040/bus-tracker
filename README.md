@@ -83,14 +83,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://chma.dev/bus-tracker)
 
-An awesome MBTA Bus Tracker on real-time to track the buses by route!
+An MBTA Bus Tracker web application to track the buses by route on real-time!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Frameworks and libraries used on this project.
 
 * [![HTML5][HTML5]][HTML5-url]
 * [![CSS3][CSS3]][CSS3-url]
