@@ -198,14 +198,10 @@ Project Link: [https://github.com/christopher4040/bus-tracker](https://github.co
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [MIT License](https://opensource.org/license/mit-license-php/)
+* [Figma](https://figma.com)
+* [Bootstrap](https://bootstrap.com)
+* [Mapbox](https://www.mapbox.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -230,7 +226,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [HTML5-url]: https://developer.mozilla.org/en-US/docs/Glossary/HTML5
 [CSS3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [CSS3-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
-[Mapbox.com]: https://img.shields.io/badge/Mapbox-000000?style=for-the-badge&logo=mapbox&logoColor=white
+[Mapbox.com]: https://img.shields.io/badge/000000?style=for-the-badge&logo=mapbox&logoColor=white
 [Mapbox-url]: https://www.mapbox.com/
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
