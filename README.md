@@ -185,7 +185,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - christopherpr101@gmail.com
+Christopher Maldonado-Aponte - christopherpr101@gmail.com
 
 Project Link: [https://github.com/christopher4040/bus-tracker](https://github.com/christopher4040/bus-tracker)
 
